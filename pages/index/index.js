@@ -14,6 +14,7 @@ Page({
     selectCurrent: 0,
     categories: [],
     goods: [],
+    newGoods: [],
     loadingMoreHidden: true,
     coupons: [],
     curPage: 1,
@@ -262,9 +263,11 @@ Page({
     for (var i = 0; i < res.data.result.length; i++) {
       goods.push(res.data.result[i]);
     }
+    const newGoods = goods.filter(item => item.tags && item.tags.indexOf('新品') !== -1)
     this.setData({
       loadingMoreHidden: true,
       goods: goods,
+      newGoods: newGoods,
     });
   },
   getCoupons: function() {

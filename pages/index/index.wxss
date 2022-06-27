@@ -225,15 +225,16 @@
 }
 
 .goods-container {
+  margin-top: 32rpx;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   box-sizing: content-box;
-  padding: 0 24rpx;
+  /* padding: 0 24rpx; */
 }
 
 .goods-box {
-  width: 339rpx;
+  /* width: calc(100vw - 2rem); */
   /* height: 472rpx; */
   background-color: #fff;
   overflow: hidden;
@@ -244,13 +245,13 @@
 }
 
 .goods-box .img-box {
-  width: 339rpx;
+  width: calc(100vw - 2rem);
   height: 339rpx;
   overflow: hidden;
 }
 
 .goods-box .img-box image {
-  width: 339rpx;
+  width: calc(100vw - 2rem);
   height: 339rpx;
 }
 
@@ -259,6 +260,7 @@
   font-size: 24rpx;
   color: #333;
   margin-left: 24rpx;
+  margin-top: 16rpx;
 }
 
 .goods-box .goods-price-container {
@@ -607,4 +609,37 @@
 }
 .pingtuantag {
   margin-left: 16rpx;
+}
+
+.common-container {
+  border-radius: 1rem;
+  margin: 0 1rem;
+}
+.title {
+  margin-top: 32rpx;
+  font-weight: bold;
+  font-size: 48rpx;
+}
+.sub-title {
+  margin-top: 16rpx;
+  color: #A9A6A6;
+}
+.new-goods-container > .new-goods-swiper-container {
+  margin-top: 32rpx;
+}
+.new-goods-swiper > .wx-swiper-wrapper {
+  border-radius: 1rem;
+}
+
+.card-title-wrapper {
+  background-color: #9CBB82;
+  color: white;
+  padding: 16rpx;
+  font-size: 48rpx;
+  font-weight: bold;
+}
+
+.goods-container > add-to-cart{
+  position: absolute;
+  right: 32rpx;
 }

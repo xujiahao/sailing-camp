@@ -119,13 +119,7 @@
         "pagePath": "pages/category/category",
         "iconPath": "images/nav/fl-off.png",
         "selectedIconPath": "images/nav/fl-on.png",
-        "text": "分类"
-      },
-      {
-        "pagePath": "pages/coupons/index",
-        "iconPath": "images/nav/coupon-off.png",
-        "selectedIconPath": "images/nav/coupon-on.png",
-        "text": "优惠券"
+        "text": "全部商品"
       },
       {
         "pagePath": "pages/shop-cart/index",
